@@ -1,0 +1,20 @@
+<div class="grid">
+    <div class="col-6 flex justify-content-end align-items-top">
+        <div class="grid flex justify-content-end">
+            <div class="col-8 col-offset-4">
+                <p class="text m-0 ">{{ 'demo.greeting' | translate}}</p>
+                <h1 class="title flex justify-content-begin m-0">{{ 'demo.name' | translate }}</h1>
+                <h1 class="title flex justify-content-begin m-0 mb-6 ml-8">{{ 'demo.lastname' | translate }}</h1>
+                <h3 class="subtitle flex mb-2 mt-5">{{ 'demo.degree' | translate | uppercase }}</h3>
+                <p class="text text-justify mr-6">{{ 'demo.text-resume-1' | translate }}</p>
+                <p class="text text-justify mr-6">{{ 'demo.text-resume-2' | translate }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 flex justify-content-begin">
+        <img class="main-image" src="../../../../assets/images/me.png" alt="">
+    </div>
+</div>
+
+<app-contact></app-contact>
+<app-resume></app-resume>

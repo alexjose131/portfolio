@@ -1,0 +1,13 @@
+{
+    "demo": {
+        "greeting": "¡Hola! Yo soy",
+        "name": "Alexander",
+        "lastname": "Fernandez",
+        "resume": "Resumen",
+        "contact": "Contacto",
+        "github": "Github",
+        "degree": "INGENIERO INFORMÁTICO",
+        "text-resume-1": "Desarrollador de software con experiencia en construccion de aplicaciones web con tecnologias punta como Angular, NestJs y ExpressJs. Conocimientos de Bases de datos relacionales, no-relacionales y servicios de AWS.",
+        "text-resume-2": "Experiencia profesional en Desarrollo de APIs para la integracion de sistemas a través de tecnologías de Mulesoft. Apasionado por el desarrollo de modelos de inteligenia artificial."
+    }
+}
