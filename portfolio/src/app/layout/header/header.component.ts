@@ -16,6 +16,7 @@ export class HeaderComponent implements OnInit {
   previousLang: string = 'ES'
   showResumeDialog: boolean = false
   showContactDialog: boolean = false
+  display: boolean = false
 
   constructor(public translate: TranslateService, 
               public primeNGConfig: PrimeNGConfig,
@@ -41,6 +42,7 @@ export class HeaderComponent implements OnInit {
   }
 
   changeLang(event: any) {
+    this.display = false
     this.lang = event.option.text
     this.dataService.setLang(this.lang)
   }
@@ -66,15 +68,18 @@ export class HeaderComponent implements OnInit {
   }
 
   showResume() {
+    this.display = false
     this.dataService.setResume(true)
+
   }
 
   showContact() {
-    console.log('entra')
+    this.display = false
     this.dataService.setContact(true)
   }
   
   goToLinkedin() {
+    this.display = false
    const url = 'https://github.com/alexjose131'
 
    window.open(url, '_blank')

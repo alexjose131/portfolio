@@ -1,17 +1,55 @@
-<div class="grid">
-    <div class="col-6 flex justify-content-begin pt-2 pb-4 pl-4">
-        <p-button icon="pi pi-user" [text]="true" [plain]="true" [label]="'demo.resume' | translate" size="large" class="pr-2 transition" (onClick)="showResume()"></p-button>
-        <p-button icon="pi pi-info-circle" [text]="true" [plain]="true" [label]="'demo.contact' | translate" size="large" class="pr-2 transition" (onClick)="showContact()"></p-button>
-        <p-button icon="pi pi-github" [link]="true" [text]="true" [plain]="true" [label]="'demo.github' | translate" size="large" class="pr-2 transition" (onClick)="goToLinkedin()"></p-button>
-    </div>
-    <div class="col-6 flex justify-content-end pt-2 pb-4 pr-5">
-        <span class="p-buttonset">
-            <p-selectButton (onOptionClick)="changeLang($event)" [options]="languageOptions" [(ngModel)]="value" optionLabel="icon">
-                <ng-template let-item pTemplate>
-                    <div class="font-semibold">{{item.text}}</div>
-                    <img [src]="item.icon" [style]="{'width': '25px', 'margin-left': '3px'}"/>
-                </ng-template>
-            </p-selectButton>
-        </span>
+<div id="laptop">
+    <div class="grid">
+        <div class="col-6 flex justify-content-begin pt-2 pb-4 pl-4">
+            <p-button icon="pi pi-user" [text]="true" [plain]="true" [label]="'demo.resume' | translate" size="large" class="pr-2 transition" (onClick)="showResume()"></p-button>
+            <p-button icon="pi pi-info-circle" [text]="true" [plain]="true" [label]="'demo.contact' | translate" size="large" class="pr-2 transition" (onClick)="showContact()"></p-button>
+            <p-button icon="pi pi-github" [link]="true" [text]="true" [plain]="true" [label]="'demo.github' | translate" size="large" class="pr-2 transition" (onClick)="goToLinkedin()"></p-button>
+        </div>
+        <div class="col-6 flex justify-content-end pt-2 pb-4 pr-5">
+            <span class="p-buttonset">
+                <p-selectButton (onOptionClick)="changeLang($event)" [options]="languageOptions" [(ngModel)]="value" optionLabel="icon">
+                    <ng-template let-item pTemplate>
+                        <div class="font-semibold">{{item.text}}</div>
+                        <img [src]="item.icon" [style]="{'width': '25px', 'margin-left': '3px'}"/>
+                    </ng-template>
+                </p-selectButton>
+            </span>
+        </div>
     </div>
 </div>
+
+<div id="mobile">
+
+    <p-sidebar [(visible)]="display">
+        <div class="grid">
+            <div class="col-12">
+                <span class="p-buttonset flex pl-3">
+                    <p-selectButton (onOptionClick)="changeLang($event)" [options]="languageOptions" [(ngModel)]="value" optionLabel="icon">
+                        <ng-template let-item pTemplate>
+                            <div class="font-semibold">{{item.text}}</div>
+                            <img [src]="item.icon" [style]="{'width': '25px', 'margin-left': '3px'}"/>
+                        </ng-template>
+                    </p-selectButton>
+                </span>
+
+            </div>
+            <div class="col-12">
+                <div>
+                    <p-button icon="pi pi-user" [text]="true" [plain]="true" [label]="'demo.resume' | translate" size="large" class=" transition" (onClick)="showResume()"></p-button>
+                </div>
+                <div>
+                    <p-button icon="pi pi-info-circle" [text]="true" [plain]="true" [label]="'demo.contact' | translate" size="large" class=" transition" (onClick)="showContact()"></p-button>
+                </div>
+                <div>
+                    <p-button icon="pi pi-github" [link]="true" [text]="true" [plain]="true" [label]="'demo.github' | translate" size="large" class=" transition" (onClick)="goToLinkedin()"></p-button>
+                </div>
+            </div>
+        </div>
+    </p-sidebar>
+    
+    <div class="flex justify-content-end">
+        <p-button size="large" [text]="true" [plain]="true"  type="text" class="p-button-raised p-button-rounded flex" (click)="display = true" icon="pi pi-cog"></p-button>
+    </div>
+    
+</div>
+

@@ -10,6 +10,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ButtonModule } from 'primeng/button';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { FormsModule } from '@angular/forms';
+import {SidebarModule} from 'primeng/sidebar';
 
 import { AppComponent } from './app.component';
 import { SkeletonComponent } from './layout/skeleton/skeleton.component';
@@ -42,6 +43,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     SelectButtonModule,
     FormsModule,
     HttpClientModule,
+    SidebarModule,
     TranslateModule.forRoot({
       loader: {
           provide: TranslateLoader,

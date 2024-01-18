@@ -8,6 +8,13 @@
         "github": "Github",
         "degree": "INGENIERO INFORMÁTICO",
         "text-resume-1": "Desarrollador de software con experiencia en construccion de aplicaciones web con tecnologias punta como Angular, NestJs y ExpressJs. Conocimientos de Bases de datos relacionales, no-relacionales y servicios de AWS.",
-        "text-resume-2": "Experiencia profesional en Desarrollo de APIs para la integracion de sistemas a través de tecnologías de Mulesoft. Apasionado por el desarrollo de modelos de inteligenia artificial."
+        "text-resume-2": "Experiencia profesional en Desarrollo de APIs para la integracion de sistemas a través de tecnologías de Mulesoft. Apasionado por el desarrollo de modelos de inteligencia artificial.",
+        "contact-means": "MEDIOS DE CONTACTO",
+        "lets-talk": "¡Hablemos!",
+        "front-dev": "Desarollo Frond-End",
+        "mulesoft-dev": "Desarrollo en Mulesoft",
+        "personal-projects": "Proyectos Personales",
+        "certifications": "Formacion / Certificaciones",
+        "download-cv": "Descargar CV"
     }
 }

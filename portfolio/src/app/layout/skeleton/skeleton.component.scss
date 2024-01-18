@@ -1,7 +1,75 @@
-.background{
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #mobile { display: grid; }  /* show it on small screens */
+  #laptop { display: none; }   /* hide it elsewhere */
+
+  .background{
+    width: auto;
+    height: auto;
+    background-image: white;
+    border-radius: 100%;
+  }
+  
+}
+
+@media only screen and (max-width: 425px) {
+  #mobile { display: grid; }  /* show it on small screens */
+  #laptop { display: none; }   /* hide it elsewhere */
+
+  .background{
+    width: auto;
+    height: auto;
+    background-image: white;
+    border-radius: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  #mobile { display: grid; }  /* show it on small screens */
+  #laptop { display: none; }   /* hide it elsewhere */
+
+  .background{
+    width: auto;
+    height: auto;
+    background-image: white;
+    border-radius: 100%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #mobile { display: none; }  /* show it on small screens */
+  #laptop { display: grid; }   /* hide it elsewhere */
+
+  .background{
     width: auto;
     height: auto;
     background-image:linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%,
     #2196F3 0%,  rgb(36, 56, 146) 100%);
     border-radius: 100%;
   }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  #mobile { display: none; }  /* show it on small screens */
+  #laptop { display: grid; }   /* hide it elsewhere */
+
+  .background{
+    width: auto;
+    height: auto;
+    background-image:linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%,
+    #2196F3 0%,  rgb(36, 56, 146) 100%);
+    border-radius: 100%;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  #mobile { display: none; }  /* show it on small screens */
+  #laptop { display: grid; }   /* hide it elsewhere */
+
+  .background{
+    width: auto;
+    height: auto;
+    background-image:linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%,
+    #2196F3 0%,  rgb(36, 56, 146) 100%);
+    border-radius: 100%;
+  }
+}
