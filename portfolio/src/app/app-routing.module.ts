@@ -15,7 +15,7 @@ const routes: Routes = [
       path: INTERNAL_PATHS.APP_DEFAULT,
       loadChildren: () => import('@modules/home/home.module').then((m): typeof HomeModule => m.HomeModule),
      },
-     { path: '**', redirectTo: EMPTY_STRING, pathMatch: 'full' },
+     { path: '**', redirectTo: 'home', pathMatch: 'full' },
     ],
    },
    { path: '**', redirectTo: EMPTY_STRING, pathMatch: 'full' },
